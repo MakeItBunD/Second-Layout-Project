@@ -1,0 +1,34 @@
+.catalog {
+
+    &__container {
+        padding: 100px 0;
+        background: radial-gradient($color_2 -200px, $color_3 70%);
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 30px;
+        line-height: 44px;
+        text-align: center;
+        margin: 0 0 35px 0;
+    }
+
+    &__button {
+        display: block;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+
+@media (max-width: 350px) {
+    .catalog {
+    
+        &__title {
+            font-size: 24px;
+        }
+    
+        &__button {
+            width: 100%;
+        }
+    }
+}

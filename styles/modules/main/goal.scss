@@ -1,0 +1,52 @@
+.goal {
+
+    &__item {
+        margin: 0 0 60px 0;
+    }
+
+    &__title {
+        font-size: 40px;
+        line-height: 55px;
+        text-align: center;
+        letter-spacing: 0.07em;
+        margin: 0 0 45px 0;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 -20px;
+    }
+
+    &__image {
+        width: 370px;
+        height: 267px;
+        background-color: $color_8;
+        margin: 0 20px 40px 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .goal {
+
+        &__title {
+            font-size: 30px;
+        }
+    
+        &__image {
+            width: 100%;
+            height: auto;
+            padding: 30%;
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .goal {
+
+        &__title {
+            font-size: 25px;
+        }
+    }
+}

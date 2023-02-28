@@ -1,0 +1,202 @@
+.refill {
+
+    &__container {
+        display: flex;
+        align-items: center;
+        height: 400px;
+        padding: 0 0 150px 0;
+    }
+
+    &__title {
+        font-weight: 250;
+        font-size: 40px;
+        letter-spacing: 0.07em;
+        margin: 0 0 23px 0;
+    }
+
+    &__subtitle {
+        font-family: 'Lab Grotesque';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 33px;
+        color: $color_1;
+    }
+
+    &__image-container {
+        position: relative;
+    }
+
+    &__image {
+        max-width: 650px;
+        min-width: 400px;
+    }
+
+    &__circle {
+        position: absolute;
+
+        &_small {
+            top: 53.5%;
+            left: 34.5%;
+            width: 18%;
+            transform: translate(-50%, -50%);
+        }
+
+        &_big {
+            top: 66%;
+            left: 48%;
+            width: 29%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &__background-image {
+        position: absolute;
+        width: 100%;
+        opacity: 0.7;
+        transform: translate(-50%, -50%);
+
+        &_gold {
+            top: 30%;
+            left: 65%;
+        }
+
+        &_orange {
+            top: 50%;
+            left: 50%;
+        }
+    }
+
+    &__image-time {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $color_2;
+        top: 30%;
+        right: 10%;
+        transform: translate(-50%, -50%);
+        width: 23%;
+        height: 23%;
+        border-radius: 50%;
+        background: radial-gradient(100% 65.98% at 100% 73.18%, 
+                    #FFFFFF 0.31%, #FFE2A4 59.23%, #FFD47C 100%);
+    }
+
+    &__time {
+        font-family: 'Scania Sans CY';
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 20px;
+        text-align: center;
+        margin: 0 0 10px 0;
+
+        small {
+            font-size: 14px;
+        }
+    }
+
+    &__text {
+        line-height: 24px;
+
+        &_time {
+            font-family: 'Scania Sans CY';
+            font-size: 12px;
+            line-height: 14px;
+            text-align: center;
+        }
+    }
+
+    &__image-description {
+        position: absolute;
+        bottom: 25%;
+        left: 18%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__icons {
+        display: flex;
+        align-items: center;
+        margin: 0 0 15px 0;
+    }
+
+    &__line {
+        width: 30px;
+        height: 0;
+        border: 1px solid $color_5;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .refill {
+
+        &__container {
+            height: auto;
+            flex-direction: column;
+            padding: 0;
+        }
+
+        &__image {
+            width: 100%;
+        }
+    
+        &__title {
+            text-align: center;
+        }
+
+        &__subtitle {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .refill {
+
+        &__container {
+            display: flex;
+            align-items: center;
+            padding: 0 0 80px 0;
+        }
+
+        &__subtitle {
+            margin: 0 0 100px 0;
+        }
+
+        &__image-time {
+            top: 0px;
+            left: 50%;
+            background: none;
+            color: $color_1;
+            width: 100%;
+        }
+
+        &__image-description {
+            left: 50%;
+            bottom: -70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__time {
+            font-size: 60px;
+            line-height: 28px;
+
+            small {
+                font-size: 18px;
+            }
+        }
+
+        &__text {
+    
+            &_time {
+                font-size: 18px;
+                line-height: 20px;
+            }
+        }
+    }
+}
